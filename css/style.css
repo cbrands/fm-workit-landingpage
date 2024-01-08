@@ -51,7 +51,7 @@ body {
   font-size: var(--fs-400);
   font-weight: var(--fw-regular);
   color: hsl( var(--clr-very-dark) );
-  background-color: hsl( var(--clr-light) );
+  background-color: hsl( var(--clr-white) );
   line-height: 1.7;
   min-height: 100vh;
   display: flex;
@@ -307,6 +307,10 @@ header {
   fill: #24053E;
 }
 
+.shape-fill-features {
+  fill: #FCF8FF;
+}
+
 .cta {
   width: 21.4rem;
   min-height: 12rem;
@@ -322,6 +326,12 @@ header {
 
 main {
   margin-top: 18rem;
+  background-color: hsl(var(--clr-light));
+  position: relative;
+}
+
+section {
+  margin-top: 8rem;
 }
 @media (min-width: 48em) {
   .cta {
