@@ -229,6 +229,7 @@ body {
   width: 17.5rem;
   height: 17.5rem;
   border-radius: 50%;
+  z-index: -5;
 }
 
 .phone {
@@ -333,6 +334,58 @@ main {
 section {
   margin-top: 8rem;
 }
+
+#founder {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.founder__info {
+  text-align: center;
+  width: calc(100% - 2rem);
+  min-height: 24rem;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -4rem;
+  display: block;
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-very-dark));
+  padding: 0rem 2rem;
+  z-index: 5;
+}
+
+.founder__info h2 {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.founder__info p {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.founder__pattern {
+  display: none;
+}
+
+footer {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.7rem;
+}
+
+.social {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
 @media (min-width: 48em) {
   .cta {
     width: 35.8rem;
@@ -345,6 +398,23 @@ section {
     background-repeat: no-repeat, no-repeat;
     background-position: -32% 32%, 110% 83%;
     padding-bottom: 20rem;
+  }
+
+  #founder {
+    flex-direction: row;
+  }
+
+  .founder__info {
+    padding: 0 4rem;
+    max-width: 32rem;
+  }
+
+  .founder__pattern {
+    z-index: 5;
+    position: absolute;
+    top: 164%;
+    left: 63%;
+    display: block;
   }
 }
 
@@ -360,6 +430,10 @@ section {
   header {
     background-position: -8% 32%, 104% 83%;
     padding-bottom: 15rem;
+  }
+
+  .founder__info {
+    max-width: 45rem;
   }
 
   main {
