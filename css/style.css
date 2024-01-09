@@ -447,11 +447,21 @@ footer {
     padding-bottom: 15rem;
   }
 
+  .founder {
+    top: -15rem;
+    right: 44rem;
+  }
+
   .founder__info {
     max-width: 45rem;
   }
 
   main {
     margin-top: 26rem;
+  }
+
+  .founder__pattern {
+    top: 60%;
+    left: 75%;
   }
 }
